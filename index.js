@@ -31,9 +31,20 @@
 //   console.log(x);
 // }
 
-var a = 10;
-function b() {
-  var x = 10;
+// var a = 10;
+// function b() {
+//   var x = 10;
+// }
+// console.log(window.a);
+// console.log(this.a);
+
+//scope
+
+function a() {
+  c();
+  function c() {
+    console.log(b);
+  }
 }
-console.log(window.a);
-console.log(this.a);
+var b = 10;
+a();
