@@ -51,7 +51,20 @@
 
 //let and const
 
-console.log(a);
-const a = 10;
+// console.log(a);
+// const a = 10;
 
-var b = 100;
+// var b = 100;
+
+//shadowing
+
+var a = 100;
+{
+  var a = 10;
+  let b = 20;
+  const c = 30;
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+console.log(a);
