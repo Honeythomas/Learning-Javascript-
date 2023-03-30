@@ -78,11 +78,20 @@
 
 //Closure
 
+// function x() {
+//   a = 7;
+//   function y() {
+//     console.log(a);
+//   }
+//   y();
+// }
+// x();
+
 function x() {
-  a = 7;
-  function y() {
+  var a = 7;
+  return function y() {
     console.log(a);
-  }
-  y();
+  };
 }
-x();
+var z = x();
+console.log(z);
