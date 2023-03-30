@@ -116,12 +116,27 @@
 // }
 // a();
 
-function x() {
-  for (let i = 1; i <= 5; i++) {
-    setTimeout(function () {
-      console.log(i);
-    }, i * 1000);
+// function x() {
+//   for (let i = 1; i <= 5; i++) {
+//     setTimeout(function () {
+//       console.log(i);
+//     }, i * 1000);
+//   }
+//   console.log("hey honey");
+// }
+// x();
+
+//for loop using var
+
+function a() {
+  for (var i = 1; i <= 5; i++) {
+    function close(i) {
+      setTimeout(function () {
+        console.log(i);
+      }, i * 1000);
+    }
+    close(i);
   }
-  console.log("hey honey");
+  console.log("Hello World");
 }
-x();
+a();
