@@ -87,11 +87,22 @@
 // }
 // x();
 
-function x() {
-  var a = 7;
-  return function y() {
-    console.log(a);
-  };
+// function x() {
+//   var a = 7;
+//   return function y() {
+//     console.log(a);
+//   };
+// }
+// var z = x();
+// console.log(z);
+
+//Practice(setTimeOut)
+
+function a() {
+  var i = 1;
+  setTimeout(function () {
+    console.log(i);
+  }, 2000);
+  console.log("Hello World");
 }
-var z = x();
-console.log(z);
+a();
