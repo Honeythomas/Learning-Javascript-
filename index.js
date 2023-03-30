@@ -70,6 +70,19 @@
 // console.log(a);
 
 //arrow function
-hello = () => {
-  return "hello World";
-};
+
+// hello = () => {
+//   return "hello World";
+
+// };
+
+//Closure
+
+function x() {
+  a = 7;
+  function y() {
+    console.log(a);
+  }
+  y();
+}
+x();
