@@ -98,11 +98,30 @@
 
 //Practice(setTimeOut)
 
-function a() {
-  var i = 1;
-  setTimeout(function () {
-    console.log(i);
-  }, 2000);
-  console.log("Hello World");
+// function a() {
+//   var i = 1;
+//   setTimeout(function () {
+//     console.log(i);
+//   }, 2000);
+//   console.log("Hello World");
+// }
+// a();
+
+// function a() {
+//   var z = 100;
+//   setTimeout(function () {
+//     console.log(z);
+//   }, 5000);
+//   console.log("hello world");
+// }
+// a();
+
+function x() {
+  for (let i = 1; i <= 5; i++) {
+    setTimeout(function () {
+      console.log(i);
+    }, i * 1000);
+  }
+  console.log("hey honey");
 }
-a();
+x();
