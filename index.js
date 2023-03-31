@@ -252,15 +252,15 @@
 
 //function statement or function declaration
 
-function s() {
-  console.log("hey");
-}
+// function s() {
+//   console.log("hey");
+// }
 
 //function expression
 
-var b = function () {
-  console.log("hello world");
-};
+// var b = function () {
+//   console.log("hello world");
+// };
 
 // anonymous function
 
@@ -270,7 +270,49 @@ var b = function () {
 
 //Named function expression
 
-var b = function x() {
-  console.log("Yo bro");
-};
-b();
+// var b = function x() {
+//   console.log("Yo bro");
+// };
+// b();
+
+//callback
+
+// setTimeout(function () {
+//   console.log("timmer");
+// }, 5000);
+// function x(y) {
+//   console.log("x");
+//   y();
+// }
+// x(function y() {
+//   console.log("y");
+// });
+
+//practice
+
+// setTimeout(function () {
+//   console.log("timer");
+// }, 5000);
+// function y(x) {
+//   console.log("y");
+//   x();
+// }
+// y(function x() {
+//   console.log("x");
+// });
+
+//event Listner
+
+// var element = document.getElementById("clickMe");
+// element.addEventListener("click", function a() {
+//   console.log("Button clicked");
+// });
+
+function attachEventListner() {
+  let count = 0;
+  var element = document.getElementById("clickMe");
+  element.addEventListener("click", function () {
+    console.log("Button Clicked", ++count);
+  });
+}
+attachEventListner();
