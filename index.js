@@ -180,19 +180,72 @@
 // counter1();
 // counter1();
 
-function counter() {
+//practice
+
+// function counter() {
+//   var count = 0;
+//   return function incrementCount() {
+//     count++;
+//     console.log(count);
+//   };
+// }
+// var counter1 = counter();
+// counter1();
+// counter1();
+// counter1();
+// counter1();
+// counter1();
+// counter1();
+// counter1();
+
+//constructor function for increment and decrement of count
+
+// function Counter() {
+//   var count = 0;
+//   this.incrementCount = function () {
+//     count++;
+//     console.log(count);
+//   };
+
+//   this.decrementCount = function () {
+//     setTimeout(function () {
+//       count--;
+//       console.log(count);
+//     }, 2000);
+//   };
+// }
+// var counter1 = new Counter();
+// counter1.incrementCount();
+// counter1.incrementCount();
+// counter1.incrementCount();
+// counter1.incrementCount();
+// counter1.incrementCount();
+// counter1.decrementCount();
+// counter1.decrementCount();
+// counter1.decrementCount();
+
+//practice
+
+function Counter() {
   var count = 0;
-  return function incrementCount() {
+  this.incrementCount = function () {
     count++;
     console.log(count);
   };
+  this.decrementCount = function () {
+    setTimeout(function () {
+      count--;
+      console.log(count);
+    }, 2000);
+  };
 }
-var counter1 = counter();
-counter1();
-counter1();
-counter1();
-counter1();
-counter1();
-counter1();
-
-counter1();
+var counter1 = new Counter();
+counter1.incrementCount();
+counter1.incrementCount();
+counter1.incrementCount();
+counter1.incrementCount();
+counter1.incrementCount();
+counter1.decrementCount();
+counter1.decrementCount();
+counter1.decrementCount();
+counter1.decrementCount();
