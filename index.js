@@ -226,26 +226,51 @@
 
 //practice
 
-function Counter() {
-  var count = 0;
-  this.incrementCount = function () {
-    count++;
-    console.log(count);
-  };
-  this.decrementCount = function () {
-    setTimeout(function () {
-      count--;
-      console.log(count);
-    }, 2000);
-  };
+// function Counter() {
+//   var count = 0;
+//   this.incrementCount = function () {
+//     count++;
+//     console.log(count);
+//   };
+//   this.decrementCount = function () {
+//     setTimeout(function () {
+//       count--;
+//       console.log(count);
+//     }, 2000);
+//   };
+// }
+// var counter1 = new Counter();
+// counter1.incrementCount();
+// counter1.incrementCount();
+// counter1.incrementCount();
+// counter1.incrementCount();
+// counter1.incrementCount();
+// counter1.decrementCount();
+// counter1.decrementCount();
+// counter1.decrementCount();
+// counter1.decrementCount();
+
+//function statement or function declaration
+
+function s() {
+  console.log("hey");
 }
-var counter1 = new Counter();
-counter1.incrementCount();
-counter1.incrementCount();
-counter1.incrementCount();
-counter1.incrementCount();
-counter1.incrementCount();
-counter1.decrementCount();
-counter1.decrementCount();
-counter1.decrementCount();
-counter1.decrementCount();
+
+//function expression
+
+var b = function () {
+  console.log("hello world");
+};
+
+// anonymous function
+
+// function () {
+//     console.log("hey");
+// }
+
+//Named function expression
+
+var b = function x() {
+  console.log("Yo bro");
+};
+b();
