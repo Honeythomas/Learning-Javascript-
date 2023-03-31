@@ -128,15 +128,71 @@
 
 //for loop using var
 
-function a() {
-  for (var i = 1; i <= 5; i++) {
-    function close(i) {
-      setTimeout(function () {
-        console.log(i);
-      }, i * 1000);
-    }
-    close(i);
-  }
-  console.log("Hello World");
+// function a() {
+//   for (var i = 1; i <= 5; i++) {
+//     function close(i) {
+//       setTimeout(function () {
+//         console.log(i);
+//       }, i * 1000);
+//     }
+//     close(i);
+//   }
+//   console.log("Hello World");
+// }
+// a();
+
+//practice
+
+// function x() {
+//   for (let i = 1; i <= 5; i++) {
+//     setTimeout(function () {
+//       console.log(i);
+//     }, i * 1000);
+//   }
+//   console.log("Hello World");
+// }
+// x();
+
+// function f() {
+//   for (var i = 1; i <= 5; i++) {
+//     function close(i) {
+//       setTimeout(function () {
+//         console.log(i);
+//       }, 1000 * i);
+//     }
+//     close(i);
+//   }
+//   console.log("hello world");
+// }
+// f();
+
+//counter
+
+// function counter() {
+//   var count = 0;
+//   return function incrementCounter() {
+//     count++;
+//     console.log(count);
+//   };
+// }
+// var counter1 = counter();
+// counter1();
+// counter1();
+// counter1();
+
+function counter() {
+  var count = 0;
+  return function incrementCount() {
+    count++;
+    console.log(count);
+  };
 }
-a();
+var counter1 = counter();
+counter1();
+counter1();
+counter1();
+counter1();
+counter1();
+counter1();
+
+counter1();
