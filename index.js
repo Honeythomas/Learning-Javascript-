@@ -308,11 +308,56 @@
 //   console.log("Button clicked");
 // });
 
-function attachEventListner() {
-  let count = 0;
-  var element = document.getElementById("clickMe");
-  element.addEventListener("click", function () {
-    console.log("Button Clicked", ++count);
-  });
-}
-attachEventListner();
+// function attachEventListner() {
+//   let count = 0;
+//   var element = document.getElementById("clickMe");
+//   element.addEventListener("click", function a () {
+//     console.log("Button Clicked", ++count);
+//   });
+// }
+// attachEventListner();
+
+//practice
+
+// function attachEventListner() {
+//   let count = 0;
+//   var element = document.getElementById("clickMe");
+//   element.addEventListener("click", function a() {
+//     console.log("Hello world", ++count);
+//   });
+// }
+// attachEventListner();
+
+//higher order function
+
+// function x() {
+//   console.log("hello world");
+// }
+// function y(x) {
+//   x();
+// }
+//y is higher order function and x is the call back function
+
+// const radius = [3, 4, 6, 7];
+
+// const calculateArea = function (radius) {
+//   const output = [];
+//   for (let i = 0; i < radius.length; i++) {
+//     output.push(Math.PI * radius[i] * radius[i]);
+//   }
+//   return output;
+// };
+// console.log(calculateArea(radius));
+
+//practice
+
+const radius = [2, 7, 9, 5];
+
+const calculateArea = function (radius) {
+  const output = [];
+  for (let i = 0; i < radius.length; i++) {
+    output.push(Math.PI * radius[i] * radius[i]);
+  }
+  return output;
+};
+console.log(calculateArea(radius));
