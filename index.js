@@ -351,31 +351,56 @@
 
 //practice
 
-const radius = [2, 7, 9, 5];
+// const radius = [2, 7, 9, 5];
 
-const calculateArea = function (radius) {
-  const output = [];
-  for (let i = 0; i < radius.length; i++) {
-    output.push(Math.PI * radius[i] * radius[i]);
-  }
-  return output;
-};
-console.log(calculateArea(radius));
+// const calculateArea = function (radius) {
+//   const output = [];
+//   for (let i = 0; i < radius.length; i++) {
+//     output.push(Math.PI * radius[i] * radius[i]);
+//   }
+//   return output;
+// };
+// console.log(calculateArea(radius));
 
-const calculateDiameter = function (radius) {
-  const output = [];
-  for (let i = 0; i < radius.length; i++) {
-    output.push(2 * radius[i]);
-  }
-  return output;
-};
-console.log(calculateDiameter(radius));
+// const calculateDiameter = function (radius) {
+//   const output = [];
+//   for (let i = 0; i < radius.length; i++) {
+//     output.push(2 * radius[i]);
+//   }
+//   return output;
+// };
+// console.log(calculateDiameter(radius));
 
-const calculateCircumference = function (radius) {
-  const output = [];
-  for (let i = 0; i < radius.length; i++) {
-    output.push(2 * Math.PI * radius[i]);
-  }
-  return output;
-};
-console.log(calculateCircumference(radius));
+// const calculateCircumference = function (radius) {
+//   const output = [];
+//   for (let i = 0; i < radius.length; i++) {
+//     output.push(2 * Math.PI * radius[i]);
+//   }
+//   return output;
+// };
+// console.log(calculateCircumference(radius));
+
+//map
+
+const arr = [2, 4, 8, 6];
+
+function doubles(x) {
+  return x * 2;
+}
+const output = arr.map(doubles);
+
+console.log(output);
+
+function tripple(y) {
+  return y * 3;
+}
+const input = arr.map(tripple);
+
+console.log(input);
+
+function binary(a) {
+  return a.toString(2);
+}
+
+const show = arr.map(binary);
+console.log(show);
