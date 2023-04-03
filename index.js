@@ -382,25 +382,53 @@
 
 //map
 
-const arr = [2, 4, 8, 6];
+// const arr = [2, 4, 8, 6];
 
-function doubles(x) {
-  return x * 2;
-}
-const output = arr.map(doubles);
+// function doubles(x) {
+//   return x * 2;
+// }
+// const output = arr.map(doubles);
 
-console.log(output);
+// console.log(output);
 
-function tripple(y) {
-  return y * 3;
-}
-const input = arr.map(tripple);
+// function tripple(y) {
+//   return y * 3;
+// }
+// const input = arr.map(tripple);
 
-console.log(input);
+// console.log(input);
 
-function binary(a) {
-  return a.toString(2);
-}
+// function binary(a) {
+//   return a.toString(2);
+// }
 
-const show = arr.map(binary);
-console.log(show);
+// const show = arr.map(binary);
+// console.log(show);
+
+//filter
+
+// const arr = [2, 4, 3, 8, 6, 7];
+
+// function isOdd(x) {
+//   return x % 2;
+// }
+
+// const output = arr.filter(isOdd);
+// console.log(output);
+
+// function isEven(y) {
+//   return y % 2 === 0;
+// }
+
+// const input = arr.filter(isEven);
+// console.log(input);
+
+//reduce
+
+const arr = [2, 4, 3, 8, 6, 7];
+function findSum(arr) {}
+
+const output = arr.reduce(function (acc, curr) {
+  acc = acc + curr;
+  return acc;
+});
