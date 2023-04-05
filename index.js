@@ -425,10 +425,38 @@
 
 //reduce
 
-const arr = [2, 4, 3, 8, 6, 7];
-function findSum(arr) {}
+// const arr = [2, 4, 3, 8, 6, 7];
+// function findSum(arr) {}
 
-const output = arr.reduce(function (acc, curr) {
-  acc = acc + curr;
-  return acc;
+// const output = arr.reduce(function (acc, curr) {
+//   acc = acc + curr;
+//   return acc;
+// });
+
+//callback
+
+// console.log("hello world");
+
+// setTimeout(function () {
+//   console.log("hello Honey");
+// }, 5000);
+
+// console.log("hello");
+
+//callback hell or pyramid of DOOM
+
+const cart = ["shoes", "pants", "kurta", "tshirt"];
+
+// api.createOrder(cart, function () {
+//   api.proceedToPayment(function () {
+//     api.orderSummery(function () {
+//       api.updateWallet();
+//     });
+//   });
+// });
+
+//inversion of control
+
+api.createOrder(cart, function () {
+  api.proceedToPayment();
 });
