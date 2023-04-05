@@ -443,9 +443,9 @@
 
 // console.log("hello");
 
-//callback hell or pyramid of DOOM
+// const cart = ["shoes", "pants", "kurta", "tshirt"];
 
-const cart = ["shoes", "pants", "kurta", "tshirt"];
+//callback hell or pyramid of DOOM
 
 // api.createOrder(cart, function () {
 //   api.proceedToPayment(function () {
@@ -457,6 +457,34 @@ const cart = ["shoes", "pants", "kurta", "tshirt"];
 
 //inversion of control
 
-api.createOrder(cart, function () {
-  api.proceedToPayment();
+// api.createOrder(cart, function () {
+//   api.proceedToPayment();
+// });
+
+//without promise
+
+const carts = ["shoes", "pants", "kurta", "tshirt"];
+
+createOrder(carts, function (orderId) {
+  proceedToPayment(orderId);
+});
+
+//promises
+
+const cart = ["shoes", "pants", "kurta", "tshirt"];
+
+const promise = createOrder(cart);
+// {data: undefined}
+// {data: orderDetail}
+
+promise.then(function (orderId) {
+  proceedToPayment(orderId);
+});
+
+const wishList = ["books", "shoes", "car", "bikes"];
+
+const promise = addToWish(wishList);
+
+promise.then(function (orderId) {
+  proceedToPayment(orderId);
 });
