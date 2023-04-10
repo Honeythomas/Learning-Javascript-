@@ -463,28 +463,41 @@
 
 //without promise
 
-const carts = ["shoes", "pants", "kurta", "tshirt"];
+// const carts = ["shoes", "pants", "kurta", "tshirt"];
 
-createOrder(carts, function (orderId) {
-  proceedToPayment(orderId);
-});
+// createOrder(carts, function (orderId) {
+//   proceedToPayment(orderId);
+// });
 
 //promises
 
 const cart = ["shoes", "pants", "kurta", "tshirt"];
 
 const promise = createOrder(cart);
+
 // {data: undefined}
 // {data: orderDetail}
 
 promise.then(function (orderId) {
-  proceedToPayment(orderId);
+  console.log(orderId);
 });
 
-const wishList = ["books", "shoes", "car", "bikes"];
+function createOrder(cart) {
+  const pr = new Promise(function (resolve, reject) {
+    if (!validateCart(cart)) {
+      const err = new Error("Cart is not valid");
+      reject(err);
+    }
+    const orderId = "12345";
+    if (orderId) {
+      setTimeout(function () {
+        resolve(orderId);
+      }, 5000);
+    }
+  });
+  return pr;
+}
 
-const promise = addToWish(wishList);
-
-promise.then(function (orderId) {
-  proceedToPayment(orderId);
-});
+function validateCart(cart) {
+  return true;
+}
