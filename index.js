@@ -516,8 +516,8 @@
 
 //array.find
 
-const num = [45, 55, 30, 100];
+// const num = [45, 55, 30, 100];
 
-const numGreaterThanFifty = num.find((element) => element > 50);
-console.log(numGreaterThanFifty);
-console.log(numGreaterThanFifty);
+// const numGreaterThanFifty = num.find((element) => element > 50);
+// console.log(numGreaterThanFifty);
+
