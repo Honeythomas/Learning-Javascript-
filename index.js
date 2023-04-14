@@ -542,11 +542,33 @@
 
 //factorize a number
 
-function factorize(num) {
-  let product = 1;
-  for (let i = 2; i <= num; i++) {
-    product *= i;
+// function factorize(num) {
+//   let product = 1;
+//   for (let i = 2; i <= num; i++) {
+//     product *= i;
+//   }
+//   return product;
+// }
+// factorize("5");
+
+//Largest numbers in the array
+
+function largestOfFour(arr) {
+  let result = [];
+  for (let i = 0; arr.length > i; i++) {
+    let largestNum = arr[i][0];
+    for (let j = 0; j < arr.length; j++) {
+      if (largestNum < arr[i][j]) {
+        largestNum = arr[i][j];
+      }
+    }
+    result[i] = largestNum;
   }
-  return product;
+  return result;
 }
-factorize("5");
+largestOfFour([
+  [4, 5, 1, 3],
+  [13, 27, 18, 26],
+  [32, 35, 37, 39],
+  [1000, 1001, 857, 1],
+]);
