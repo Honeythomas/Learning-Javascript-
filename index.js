@@ -521,3 +521,32 @@
 // const numGreaterThanFifty = num.find((element) => element > 50);
 // console.log(numGreaterThanFifty);
 
+//recursion
+
+// function demo () {
+//     console.log("hello world");
+//     demo();
+// }
+// demo();
+
+//reverse a string
+
+// function reversedString (str) {
+//     let reversedStr = "";
+//     for (let i = str.length - 1; i >= 0; i--){
+//         reversedStr += str[i];
+//     }
+//     return reversedStr;
+// }
+// reversedString("hello")
+
+//factorize a number
+
+function factorize(num) {
+  let product = 1;
+  for (let i = 2; i <= num; i++) {
+    product *= i;
+  }
+  return product;
+}
+factorize("5");
