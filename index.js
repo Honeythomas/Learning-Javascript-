@@ -553,22 +553,32 @@
 
 //Largest numbers in the array
 
-function largestOfFour(arr) {
-  let result = [];
-  for (let i = 0; arr.length > i; i++) {
-    let largestNum = arr[i][0];
-    for (let j = 0; j < arr.length; j++) {
-      if (largestNum < arr[i][j]) {
-        largestNum = arr[i][j];
-      }
-    }
-    result[i] = largestNum;
-  }
-  return result;
+// function largestOfFour(arr) {
+//   let result = [];
+//   for (let i = 0; arr.length > i; i++) {
+//     let largestNum = arr[i][0];
+//     for (let j = 0; j < arr.length; j++) {
+//       if (largestNum < arr[i][j]) {
+//         largestNum = arr[i][j];
+//       }
+//     }
+//     result[i] = largestNum;
+//   }
+//   return result;
+// }
+// largestOfFour([
+//   [4, 5, 1, 3],
+//   [13, 27, 18, 26],
+//   [32, 35, 37, 39],
+//   [1000, 1001, 857, 1],
+// ]);
+
+//map function
+
+const arr = [3, 56, 7, 8];
+
+function double(x) {
+  return x * 2;
 }
-largestOfFour([
-  [4, 5, 1, 3],
-  [13, 27, 18, 26],
-  [32, 35, 37, 39],
-  [1000, 1001, 857, 1],
-]);
+const output = arr.map(double);
+console.log(output);
