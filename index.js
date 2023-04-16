@@ -575,10 +575,26 @@
 
 //map function
 
-const arr = [3, 56, 7, 8];
+// const arr = [3, 56, 7, 8];
 
-function double(x) {
-  return x * 2;
-}
-const output = arr.map(double);
-console.log(output);
+// function double(x) {
+//   return x * 2;
+// }
+// const output = arr.map(double);
+// console.log(output);
+
+//filter function
+
+// const arr = [2,3,4,5,6]
+
+// function oddNum (x) {
+//     return x % 2
+// }
+// const output = arr.filter(oddNum)
+// console.log(output)
+
+//setTimeOut
+
+setTimeout(function x() {
+  console.log("hello World");
+}, 5000);
