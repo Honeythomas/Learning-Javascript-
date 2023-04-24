@@ -595,6 +595,41 @@
 
 //setTimeOut
 
-setTimeout(function x() {
-  console.log("hello World");
-}, 5000);
+// setTimeout(function x() {
+//   console.log("hello World");
+// }, 5000);
+
+//linked List
+
+// class LinkedList {
+//   constructor(data) {
+//     this.head = {
+//       value: data,
+//       next: null,
+//     };
+//     this.tail = this.head;
+//     this.length = 1;
+//   }
+// }
+// const myList = new LinkedList(10);
+// console.log(myList);
+
+//Geeksforgeeks
+
+function smallestNum(arr) {
+  if (!arr.length) {
+    return console.log("error");
+  } else if (arr.length === 1) {
+    return arr[0];
+  } else {
+    let currentMin = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] < currentMin) {
+        currentMin = arr[i];
+      }
+    }
+    return currentMin;
+  }
+}
+const result = smallestNum([2, 4, 5, 3, 1]);
+console.log(result);
