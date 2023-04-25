@@ -658,3 +658,19 @@ let arr = [4, 5, 7, 8, 3, 4, 5, 6, 7, 8, 8];
 
 const result = arr.forEach((value, i, arr) => (arr[i] = value * 2));
 console.log(arr);
+
+//this
+
+let employee = {
+  name: "Honey",
+  position: "Frontend Developer",
+  info: function () {
+    console.log(
+      "Hi my name is",
+      this.name,
+      "and my position is",
+      this.position
+    );
+  },
+};
+employee.info();
