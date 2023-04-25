@@ -634,20 +634,27 @@
 // const result = smallestNum([2, 4, 5, 3, 1]);
 // console.log(result);
 
-function smallestNum(arr) {
-  if (!arr.length) {
-    return console.log("error");
-  } else if (arr.length === 0) {
-    return arr[0];
-  } else {
-    let currentMin = arr[0];
-    for (let i = 1; i < arr.length; i++) {
-      if (currentMin > arr[i]) {
-        currentMin = arr[i];
-      }
-    }
-    return currentMin;
-  }
-}
-const result = smallestNum([2, 4, 5, 7, 8, 1, 3]);
-console.log(result);
+// function smallestNum(arr) {
+//   if (!arr.length) {
+//     return console.log("error");
+//   } else if (arr.length === 0) {
+//     return arr[0];
+//   } else {
+//     let currentMin = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//       if (currentMin > arr[i]) {
+//         currentMin = arr[i];
+//       }
+//     }
+//     return currentMin;
+//   }
+// }
+// const result = smallestNum([2, 4, 5, 7, 8, 1, 3]);
+// console.log(result);
+
+//forEach
+
+let arr = [4, 5, 7, 8, 3, 4, 5, 6, 7, 8, 8];
+
+const result = arr.forEach((value, i, arr) => (arr[i] = value * 2));
+console.log(arr);
